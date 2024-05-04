@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueris.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadepa</title>
+  </head> 
+
+  <body>
+    <header>
+      <img class="logo-img" src="./img/FADEPA-logo.jpg" alt="logo" />
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/bars-solid.svg" alt="" class="menu-icon" />
+        </label>
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li><a href="#Portada">Portada</a></li>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Productos">Productos</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+          <li><a href="form1.html" class="btn-signin">Sign In</a></li>
+          <li><a href="form2.html" class="btn-signup">Sign Up</a></li>
+        </ul>
+
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./img/crt icon.svg"
+            alt="carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="Portada" class="hero_section">
+        <div class="hero_section-text">
+          <h1>Bienvenidos a <span>Fadepa</span></h1>
+          <p>
+            Pintamos tu hogar del color <br />
+            de tus sueños
+          </p>
+        </div>
+      </section>
+
+      <section id="Nosotros" class="about_section">
+        <div class="container-aboutsection">
+          <div>
+            <h1 class="section_title whiteTitle">Quienes Somos</h1>
+            <p>
+              FADEPA, nace en 1989, en la localidad de Villa Nueva, provincia de
+              Córdoba. Se origina como un pequeño emprendimiento que elabora una
+              reducida línea de productos. A lo largo de veinte años de
+              trayectoria ha desarrollado un crecimiento continuo y sólido y ha
+              ido incorporando artículos hasta ofrecer una línea completa de
+              productos que satisfacen todas las necesidades del hogar y de la
+              obra (la construcción).
+            </p>
+          </div>
+
+          <div class="container">
+              <div class="image-container">
+                <div class="image-container1">
+                  <img src="./img/icon industry-solid.svg" alt="industry-solid" />
+                  <h3>FABRICA DE PINTURAS</h3>
+                  <p>
+                    "Fabricamos toda clase de pinturas <br />
+                    y derivados, pero nuestro principal <br />
+                    producto es la confianza que <br />
+                    otorgamos a todos nuestros clientes."
+                  </p>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <div class="image-container3">
+                  <img src="./img/medal-solid.svg" alt="medal-solid" />
+                  <h3>CALIDAD</h3>
+                  <p>
+                    "Contamos con una excelente red <br />
+                    de proveedores que garantizan la <br />
+                    calidad de materias primas e insumos, <br />
+                    y con una satisfecha cartera de clientes."
+                  </p>
+                </div>
+              </div>
+
+              <div class="image-container">
+                <div class="image-container2">
+                  <img
+                    src="./img/people-carry-box-solid.svg"
+                    alt="people-carry-box-solid"
+                  />
+                  <h3>ACOMPAÑAMIENTO</h3>
+                  <p>
+                    "Un vínculo cercano y activo con <br />
+                    nuestros clientes, y nuestro compromiso <br />
+                    con lograr sus resultados, son nuestra <br />
+                    principal herramienta."
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="Productos">
+        <h2>Productos</h2>
+
+        <div class="categorias">
+          <button class="categoria activa">Todas</button>
+          <button class="categoria">Interior</button>
+          <button class="categoria">Exterior</button>
+          <button class="categoria">Techos</button>
+          <button class="categoria">Fondos</button>
+          <button class="categoria">Esmaltes</button>
+        </div>
+
+        <div class="productos-container">
+          <div class="product">
+            <img src="./img/interior.jpeg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Interior</h3>
+                <p>$10.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/exterior.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Exterior</h3>
+                <p>$20.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/techos.jpeg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Techos</h3>
+                <p>$30.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/maderas.jpeg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Maderas</h3>
+                <p>$40.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/esmaltes.jpeg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Esmaltes</h3>
+                <p>$50.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/revestimiento.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Fondos</h3>
+                <p>$60.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/revestimiento.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Fondos</h3>
+                <p>$60.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/revestimiento.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Fondos</h3>
+                <p>$60.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/revestimiento.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Fondos</h3>
+                <p>$60.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./img/revestimiento.jpg" alt="interior" />
+
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Fondos</h3>
+                <p>$60.000</p>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-load">Ver Más</button>
+      </section>
+
+      <section id="Contacto">
+        <div class="containerC">
+          <h2 class="section_title whiteTitle">
+            Pinta con <span>FADEPA</span>
+          </h2>
+          <div class="contact__formContainer">
+            <div class="contact__formContainer-form">
+              <form action="">
+                <div class="form__item">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="form__item">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form__item">
+                  <label for="telefono">Telefono</label>
+                  <input type="text" name="telefono" id="telefono" />
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99611.232271834!2d-62.25637244999999!3d-38.72122955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1706554153678!5m2!1ses!2sar"
+                width="450"
+                height="380"
+                s
+                tyle="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Terminos de uso</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/freecodecamp">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/school/free-code-camp/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>Hecho por <span>Mauricio Halberg</span></p>
+    </footer>
+  </body>
+</html>
