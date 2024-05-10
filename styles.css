@@ -39,14 +39,14 @@ header {
 
 .logo-img {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   min-width: 150px;
   max-height: 80px;
   padding-left: 25px;
 }
 
 ul li {
-  margin: 0 25px;
+  margin: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,111 +180,61 @@ main {
 }
 
 /* ********************************** */ 
-.about_section {
+#info {
+  padding: 70px 0; /* arriba y abajo 70px, izq y der 0px*/
   max-width: 1200px;
   margin: 0 auto;
-  background-color: skyblue;
-  padding: 50px;
-}
-.container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: flex; 
-    justify-content: space-around;
-    padding: 50px;
-}
-
-.image-container {
-  text-align: center;
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 20px;
-  background: blue;
-  padding: 10px;
-} 
-
-.image-container1 img {
-  width: 100px; /* Ajusta el tamaño de las imágenes según tu preferencia */
-  height: auto; /* Para mantener la proporción */
-}
-
-.image-container2 img {
-  width: 110px; /* Ajusta el tamaño de las imágenes según tu preferencia */
-  height: auto; /* Para mantener la proporción */
-}
-
-.image-container3 img {
-  width: 90px; /* Ajusta el tamaño de las imágenes según tu preferencia */
-  height: auto; /* Para mantener la proporción */
-}
-
-.section_title {
-    font-size: 35px; 
-    font-weight: 200; 
-    text-transform: uppercase; 
-    text-align: center; 
-    margin-bottom: 30px; 
-    font-weight: 700;
-} 
-
-.whiteTitle {
-    color: var(--white); 
-} 
-
-.about_section h3 {
-  color: yellow;
-}
-.about_section p {
-    font-size: 15px; 
-    color: var(--white);
-    text-align: center;
-    line-height: 1.5;
-} 
-
-.icons-asctn {
-  display: flex; 
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content:space-around;
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 40px; /* distancia entre cards y titulo */
+}
+
+#info h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 40px 0;
-  max-width: 1200px;
-} 
-
-.icons-as {
-    background: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 30px;
-    gap: 10px;
 }
 
-.icons-as img {
-  width: 90px;
-  height: auto;
+.info-card {
+  width: 300px;
+  height: 290px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--white);
+  border-radius: 10px;
+  gap: 10px;
+  border: 2px solid black;
 }
 
-.p-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
-
-.p-info h3 {
-  color: black; 
-  font-size: 20px;
-  margin-bottom: 5px;
+.info-card img {
+  width: 70px;
+  border-radius: 20px;
+  border: 2px solid black;
 }
 
-.p-info p {
-  font-size: 9px;
-  font-weight: 800; 
-  margin-bottom: 10px;
+.info-card h3 {
+  font-weight: 600;
+  font-size: 18px;
 }
+
+.info-card p {
+  font-size: 14px;
+  font-weight: 450;
+}
+
 /* ********************************** */ 
 
 #Productos {
@@ -303,7 +253,7 @@ main {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 40px;
-    color: var(--yellow);
+    color: var(--white);
   } 
 
   .categorias {
@@ -409,7 +359,16 @@ main {
 .containerC {
   max-width: 1200px; 
   margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  color: var(--white);
 } 
+
+.containerC h2 {
+  font-size: 32px;
+}
 
 .contact__formContainer {
     display: grid;
