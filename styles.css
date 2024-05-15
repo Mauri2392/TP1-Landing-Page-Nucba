@@ -117,7 +117,10 @@ ul li {
 /* ********************************** */
 main {
   background-color: skyblue; 
+
 }
+
+/************************************** */ 
 
 .hero_section {
     height: calc(100vh); /* tener en cuenta los 80px del navbar*/ 
@@ -180,6 +183,96 @@ main {
 }
 
 /* ********************************** */ 
+
+#discover {/**/
+  margin-top: 50px; /* distancia entre el header y la section hero */
+  padding: 70px 0; /* padding arriba y abajo para que no se pegue tanto al borde */
+  max-width: 1200px;
+  margin: 0 auto; /* ponerlo siempre que usamos max-width para centrar */ 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%
+}
+
+.discover-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.discover-info h1 {/**/
+  font-size: 35px;
+  width: 90%;
+  min-width: 500px; /*Para que nunca ocupe menos que esto en desktop*/
+  font-weight: 800;
+  color: var(--text-white);
+  /* background: linear-gradient(to top, #30cfd0, #c43ad6); /* css auto prefix */
+  /* background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text; */ 
+}
+
+.discover-info span {
+  font-weight: 800;
+}
+
+.discover-info p {/**/
+  font-size: 20px;
+  width: 80%;
+  color: var(--dark-blue);
+}
+
+.discover-info a {/**/
+  color: var(--white);
+  background-color: #007bff;
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid var(--white);
+}
+
+.discover-product {
+  width: 300px;
+  background: #007bff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.discover-product img {
+  border-radius: 20px;
+  height: 280px;
+}
+
+.discover-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; /* abarca el 100% del contenedor */
+  gap: 5px;
+}
+
+.discover-product-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.discover-product-top h3 {
+  color: var(--white);
+  margin-bottom: 5px;
+  font-size: 16px; 
+}
+
+/* ********************************** */ 
+
 #info {
   padding: 70px 0; /* arriba y abajo 70px, izq y der 0px*/
   max-width: 1200px;
@@ -189,6 +282,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 40px; /* distancia entre cards y titulo */
+  
 }
 
 #info h2 {
@@ -273,11 +367,11 @@ main {
     cursor: pointer;
   } 
 
-  .activa {
+.activa {
     background: #007bff;
   } 
 
-  .products-container {
+.products-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -288,13 +382,13 @@ main {
   max-width: 1200px;
   }
 
-  .product img {
+.product img {
     width: 200px;
     height: 250px;
     border-radius: 20px;
   }
 
-  .product {
+.product {
     background: ghostwhite;
     display: flex;
     flex-direction: column;
@@ -304,6 +398,10 @@ main {
     border-radius: 30px;
     gap: 10px;
   } 
+
+  .product:hover {
+    transform: scale(1.03);
+  }
 
   .product-info {
     display: flex;
@@ -400,7 +498,7 @@ main {
     color: var(--white);
     font-weight: 200;
     text-align: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0; 
 }
 
 .contact__formContainer-form .form__item input {
@@ -409,7 +507,8 @@ main {
     border-radius: 20px;
     margin-bottom: 25px;
     outline: none;
-    width: 100%;
+    width: 100%; 
+    border: 1px solid black;
 } 
 
 .contact__formContainer-form form {
@@ -432,6 +531,8 @@ main {
     background-color: #007bff;
     margin-top: 10px;
     cursor: pointer;
+    border: 1px solid var(--white);
+    color: var(--white);
 } 
 
 /* ********************************** */ 
@@ -454,7 +555,7 @@ footer {
   footer p {
     color: var(--dark-blue);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
   }
   
   footer p span {
@@ -471,5 +572,9 @@ footer {
     display: flex;
     justify-content: center;
     gap: 50px;
+  }
+
+  .icons a:hover {
+    transform: scale(1.1)translateY(-5px);
   }
   
