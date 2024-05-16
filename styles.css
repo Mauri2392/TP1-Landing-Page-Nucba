@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 50px 10px 0px;
   margin: 0 auto;
   z-index: 2; /* Para que se vea siempre por encima */
 }
@@ -42,7 +42,7 @@ header {
   max-width: 200px;
   min-width: 150px;
   max-height: 80px;
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
 ul li {
@@ -104,17 +104,6 @@ ul li {
    display: none; 
   }
 
-  .cart-icon {
-    /* font-weight: 600; */
-    
-    /* height: 50px; */
-    padding: 5px 10px;
-    margin-right: 1rem;
-    color: var(--white); 
-    cursor: pointer;
-  }
-
-/* ********************************** */
 main {
   background-color: skyblue; 
 
@@ -184,7 +173,7 @@ main {
 /* ********************************** */ 
 
 #info {
-  padding: 70px 0; /* arriba y abajo 70px, izq y der 0px*/
+  padding: 70px 40px; /* arriba y abajo 70px, izq y der 0px*/
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -192,7 +181,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 40px; /* distancia entre cards y titulo */
-  
+  margin-top: 20px;
 }
 
 #info h2 {
@@ -539,6 +528,7 @@ main {
 
 #comentarios {
   border: 1px solid black;
+  width: 75%;
 }
 
 /* ********************************** */ 
@@ -573,6 +563,10 @@ footer {
     justify-content: center;
     gap: 20px;
   } 
+
+  .footer-links a:hover {
+    border-bottom: 1px solid black;
+  }
 
   .icons { 
     display: flex;

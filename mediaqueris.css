@@ -45,8 +45,100 @@
   display: flex;
 }
 
+.hero_section-text h1 {
+  font-size: 60px;
+}
+
+#info {
+  text-align: center;
+}
+
+#discover {
+  /* display: flex; */
+  flex-direction: column;
+  /* text-align: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px; */ 
+} 
+
+.discover-info {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.discover-info h1 {
+  width: 100%;
+  max-width: 500px;
+  min-width: unset;
+}
+
+.discover-info p {
+  width: 80%;
+  max-width: 600px;
+} 
+
+.discover-info a {
+  margin-bottom: 25px;
+}
+
+.categorias {
+  flex-wrap: wrap;
+  max-width: 400px;
+} 
+
+.categoria {
+  width: 120px;
+}
+
+.containerC {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
+.contact__formContainer {
+  display: flex;
+  flex-direction: column;
+} 
 
+iframe {
+  width: 300px;
+  height: 350px;
+}
+}
+
+/* Celu */ 
+@media (max-width: 576px) { /* de 0 a 576 se aplica esto */
+
+.hero_section-text h1 {
+  font-size: 45px;
+}
+
+.hero_section-text p {
+  font-size: 25px;
+}
+
+.discover-info h1 {
+  font-size: 25px;
+}
+
+.discover-product {
+  width: 50%;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+} 
+
+.footer-links {
+  gap: 3px;
+} 
 
 }
