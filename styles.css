@@ -20,11 +20,12 @@ html {
 
 body {
   width: 100%;
-  background-color: skyblue;
+  /* background-color: skyblue; */
+  background-color: #007bff;
 } 
 
 header {
-  background: linear-gradient(to bottom,#007bff, skyblue);
+  background: linear-gradient(to bottom, skyblue, #007bff);
   width: 100%;
   position: fixed;  /* Para fixear en el top de la página */ 
   top: 0;
@@ -105,7 +106,8 @@ ul li {
   }
 
 main {
-  background-color: skyblue; 
+  /* background-color: skyblue; */
+  background-color: #007bff;
 
 }
 /************************************** */ 
@@ -156,7 +158,7 @@ main {
 
 .hero_section-text h1 span { 
     display: block;
-    color: yellow;
+    color: #007bff; 
 } 
 
 .hero_section-text p {
@@ -271,18 +273,25 @@ main {
 
 .discover-info a {/**/
   color: var(--white);
-  background-color: #007bff;
+  background-color: blue;
   width: 120px;
   padding: 8px 0px;
   border-radius: 10px;
   font-size: 16px;
   text-align: center;
-  border: 1px solid var(--white);
+} 
+
+.discover-info a:hover {
+  box-shadow: 0 0 5px blue,
+              0 0 10px blue;
+  transform: scale(1.02);
+  background-color: white;
+  color: #007bff;
 }
 
 .discover-product {
   width: 300px;
-  background: white;
+  background: skyblue;
   /*background: #007bff;*/
   border-radius: 20px;
   padding: 20px;
@@ -290,7 +299,12 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border: 2px solid black;
+}
+
+.discover-product:hover {
+  box-shadow: 0 0 10px skyblue,
+              0 0 20px skyblue;
+  transform: scale(1.02);
 }
 
 .discover-product img {
@@ -329,7 +343,6 @@ main {
     max-width: 1200px; 
     margin: 0 auto;
     width: 100%;
-    background-color: skyblue;
   } 
 
   #Products h2 {
@@ -348,7 +361,7 @@ main {
   } 
 
   .categoria {
-    background: #007bff;
+    background:blue;
     border: none;
     padding: 10px 15px;
     color: var(--white);
@@ -356,8 +369,12 @@ main {
     cursor: pointer;
   } 
 
+  .categoria:hover {
+    transform: scale(1.02);
+  }
+
 .activa {
-    background: blue;
+    background: var(--dark-blue);
   } 
 
 .products-container {
@@ -378,7 +395,7 @@ main {
   }
 
 .product {
-    background: white;
+    background: skyblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,11 +403,12 @@ main {
     padding: 20px;
     border-radius: 30px;
     gap: 10px;
-    border: 2px solid black;
   } 
 
   .product:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px skyblue,
+                0 0 20px skyblue;
   }
 
   .product-info {
@@ -427,12 +445,18 @@ main {
     color: var(--white); 
     border-radius: 10px;
     padding: 10px;
-    border: 2px solid black;
   } 
 
+  .btn-add:hover {
+    box-shadow: 0 0 5px #007bff,
+                0 0 10px #007bff;
+    transform: scale(1.02);
+    background-color: var(--white);
+    color: #007bff;
+  }
+
   .btn-load {
-    background: #007bff;
-    border: 1px solid var(--white);
+    background: blue;
     padding: 10px 35px;
     color: var(--white);
     border-radius: 10px;
@@ -440,13 +464,15 @@ main {
   }
 
   .btn-load:hover {
-    background: blue;
+    background: white;
+    color: #007bff;
+    box-shadow: 0 0 5px blue,
+                0 0 10px blue;
   }
 
 /* ********************************** */  
 
 #Contacto {
-    background-color: skyblue;
     padding: 40px; 
     max-width: 1200px; 
     margin: 0 auto;
@@ -519,16 +545,22 @@ main {
     border-radius: 30px;
     font-size: 20px;
     text-transform: uppercase;
-    background-color: #007bff;
+    background-color: blue;
     margin-top: 10px;
     cursor: pointer;
-    border: 1px solid var(--white);
     color: var(--white);
 } 
 
+.contact__formContainer-form form button:hover {
+  background: white;
+  color: #007bff;
+  box-shadow: 0 0 5px blue,
+              0 0 10px blue;
+}
+
 #comentarios {
   border: 1px solid black;
-  width: 75%;
+  width: 100%;
 }
 
 /* ********************************** */ 
@@ -544,7 +576,7 @@ footer {
     padding: 30px 0;
     /* max-width: 1200px; */
     margin: 0 auto;
-    background: linear-gradient(to bottom, skyblue, #007bff);
+    background: linear-gradient(to bottom, #007bff, skyblue );
   }
   
   footer a,
@@ -574,7 +606,22 @@ footer {
     gap: 50px;
   }
 
+  .icons a {
+    font-size: 18px;
+    color: var(--white);
+    border: 2px solid #007bff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    /* display: inline-block; */
+    padding: 2px;
+  }
+
   .icons a:hover {
     transform: scale(1.1)translateY(-5px);
+    background: var(--white);
+    color: #007bff;
   }
   
