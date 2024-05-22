@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    scroll-padding-top: 80px; /* xq el header mide 80px */
 }
 
 :root {
@@ -21,7 +22,7 @@ html {
 body {
   width: 100%;
   /* background-color: skyblue; */
-  background-color: #007bff;
+  background-color: #007bff; 
 } 
 
 header {
@@ -107,7 +108,7 @@ ul li {
 
 main {
   /* background-color: skyblue; */
-  background-color: #007bff;
+  background-color: #007bff; 
 
 }
 /************************************** */ 
@@ -183,7 +184,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 40px; /* distancia entre cards y titulo */
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 #info h2 {
@@ -212,6 +213,10 @@ main {
   border-radius: 10px;
   gap: 10px;
   border: 2px solid black;
+} 
+
+.info-card:hover {
+  transform: scale(1.02);
 }
 
 .info-card img {
@@ -232,8 +237,8 @@ main {
 
 /* ********************************** */ 
 #discover {/**/
-  margin-top: 50px; /* distancia entre el header y la section hero */
-  padding: 70px 0; /* padding arriba y abajo para que no se pegue tanto al borde */
+  /*  margin-top: 50px; distancia entre el header y la section hero */
+  padding: 50px 0; /* padding arriba y abajo para que no se pegue tanto al borde y me sirve de margin top */
   max-width: 1200px;
   margin: 0 auto; /* ponerlo siempre que usamos max-width para centrar */ 
   display: flex;
@@ -495,7 +500,7 @@ main {
 .contact__formContainer {
     display: grid;
     grid-template-columns: repeat(2,50%);
-    gap: 50px;
+    gap: 0px;
 } 
 
 .contact__formContainer-form {
@@ -549,6 +554,7 @@ main {
     margin-top: 10px;
     cursor: pointer;
     color: var(--white);
+    margin-bottom: 25px;
 } 
 
 .contact__formContainer-form form button:hover {
@@ -561,6 +567,7 @@ main {
 #comentarios {
   border: 1px solid black;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 /* ********************************** */ 
@@ -583,7 +590,7 @@ footer {
   footer p {
     color: var(--dark-blue);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   footer p span {

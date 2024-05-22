@@ -145,4 +145,8 @@ iframe {
   gap: 3px;
 } 
 
+.footer-links a {
+  font-size: 12px;
+}
+
 }
