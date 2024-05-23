@@ -37,7 +37,7 @@ header {
   padding: 10px 50px 10px 0px;
   margin: 0 auto;
   z-index: 2; /* Para que se vea siempre por encima */
-}
+} 
 
 .logo-img {
   width: 100%;
@@ -165,9 +165,9 @@ main {
 .hero_section-text p {
   font-size: 30px;
   text-align: center;
-  color: var(--white);
+  color: var(--white); 
   padding: 30px;
-  background: linear-gradient(to top, skyblue, #007bff);
+  background: linear-gradient(to top, skyblue, white);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
