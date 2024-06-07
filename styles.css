@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    /* scroll-padding-top: 100px;*/
     scroll-padding-top: 80px; /* xq el header mide 80px */
 }
 
@@ -81,15 +81,15 @@ ul li {
   border-bottom: 1px solid black;
 }
 
-.btn-signin, .btn-signup {
+.btn-signin, 
+.btn-signup {
     margin: 10 25px;
     border: solid 1px white;
     border-radius: 5px;
     padding: 8px 15px;
     background-color: #007bff;
     color: var(--white);
-    cursor: pointer; 
-  
+    cursor: pointer;
   }
 
   .btn-signin:hover {
@@ -240,7 +240,7 @@ main {
   /*  margin-top: 50px; distancia entre el header y la section hero */
   padding: 50px 0; /* padding arriba y abajo para que no se pegue tanto al borde y me sirve de margin top */
   max-width: 1200px;
-  margin: 0 auto; /* ponerlo siempre que usamos max-width para centrar */ 
+  margin: 0 auto; /* ponerlo siempre que usamos max-width para centrar los costados */ 
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -291,11 +291,11 @@ main {
               0 0 10px blue;
   transform: scale(1.02);
   background-color: white;
-  color: #007bff;
+  color: #051d3b;
 }
 
 .discover-product {
-  width: 300px;
+  /* width: 300px;*/
   background: skyblue;
   /*background: #007bff;*/
   border-radius: 20px;
@@ -314,7 +314,9 @@ main {
 
 .discover-product img {
   border-radius: 20px;
-  height: 280px;
+  height: 250px;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .discover-product-info {
@@ -393,12 +395,6 @@ main {
   max-width: 1200px;
   }
 
-.product img {
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-  }
-
 .product {
     background: skyblue;
     display: flex;
@@ -414,6 +410,12 @@ main {
     transform: scale(1.02);
     box-shadow: 0 0 10px skyblue,
                 0 0 20px skyblue;
+  } 
+
+  .product img {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
   }
 
   .product-info {
@@ -457,7 +459,7 @@ main {
                 0 0 10px #007bff;
     transform: scale(1.02);
     background-color: var(--white);
-    color: #007bff;
+    color: #051d3b;
   }
 
   .btn-load {
@@ -466,11 +468,12 @@ main {
     color: var(--white);
     border-radius: 10px;
     cursor: pointer;
+    font-size: 16px;
   }
 
   .btn-load:hover {
     background: white;
-    color: #007bff;
+    color: #051d3b;
     box-shadow: 0 0 5px blue,
                 0 0 10px blue;
   }
@@ -548,7 +551,7 @@ main {
     border: none;
     outline: none;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     background-color: blue;
     margin-top: 10px;
@@ -559,7 +562,7 @@ main {
 
 .contact__formContainer-form form button:hover {
   background: white;
-  color: #007bff;
+  color: #051d3b;
   box-shadow: 0 0 5px blue,
               0 0 10px blue;
 }
@@ -590,7 +593,7 @@ footer {
   footer p {
     color: var(--dark-blue);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
   }
   
   footer p span {
