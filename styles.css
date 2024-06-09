@@ -297,7 +297,7 @@ main {
 }
 
 .discover-product {
-  /* width: 300px;*/
+  /* width: 500px; */
   background: skyblue;
   /*background: #007bff;*/
   border-radius: 20px;
@@ -305,8 +305,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
+  gap: 10px;
+} 
 
 .discover-product:hover {
   box-shadow: 0 0 10px skyblue,
