@@ -128,12 +128,23 @@ iframe {
   font-size: 25px;
 }
 
+#info {
+  padding-bottom: 0px;
+}
+
+.products-container {
+  padding-bottom: 0px;
+}
+
 .discover-info h1 {
   font-size: 25px;
 }
 
 .discover-product {
   width: 50%;
+}
+.containerC {
+  gap: 20px;
 }
 
 iframe {
