@@ -43,8 +43,7 @@ header {
   width: 100%;
   max-width: 150px;
   min-width: 100px;
-  height: auto;
-  /* max-height: 80px;*/
+  max-height: 80px;
   padding-left: 0px;
 }
 
