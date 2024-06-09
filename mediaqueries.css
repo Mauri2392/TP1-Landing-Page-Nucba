@@ -6,7 +6,7 @@
 
 .navbar {
   gap: 10px;
- }
+}
 
 .navbar-list {
   position: absolute;
@@ -142,15 +142,15 @@ iframe {
 } 
 
 .footer-links {
-  gap: 3px;
+  gap: 0px;
 } 
 
 .footer-links a {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 }
